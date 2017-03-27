@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite verbose="0" name="Failed suite [Suite]">
+  <parameter name="parameter2" value="123"/>
+  <parameter name="parameter1" value="parameter11"/>
+  <listeners>
+    <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+    <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+  </listeners>
+  <test name="test(failed)">
+    <parameter name="parameter2" value="123"/>
+    <parameter name="parameter1" value="parameter11"/>
+    <classes>
+      <class name="DataProviderTest.DataProviderTestCase">
+        <methods>
+          <include name="testDataDP1"/>
+        </methods>
+      </class> <!-- DataProviderTest.DataProviderTestCase -->
+    </classes>
+  </test> <!-- test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

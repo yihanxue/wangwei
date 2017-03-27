@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" total="4" passed="3">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="18" started-at="2017-03-24T06:13:57Z" finished-at="2017-03-24T06:13:57Z">
+    <groups>
+      <group name="parameter">
+        <method signature="IMsgCenterService.parameter(java.lang.String, int)[pri:0, instance:AutomaticTest.ccdai.IMsgCenterService@39aeed2f]" name="parameter" class="AutomaticTest.ccdai.IMsgCenterService"/>
+      </group> <!-- parameter -->
+    </groups>
+    <test name="test" duration-ms="18" started-at="2017-03-24T06:13:57Z" finished-at="2017-03-24T06:13:57Z">
+      <class name="AutomaticTest.ccdai.IMsgCenterService">
+        <test-method status="PASS" signature="parameter(java.lang.String, int)[pri:0, instance:AutomaticTest.ccdai.IMsgCenterService@39aeed2f]" name="parameter" duration-ms="6" started-at="2017-03-24T14:13:57Z" finished-at="2017-03-24T14:13:57Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[parameter11]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[123]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- parameter -->
+      </class> <!-- AutomaticTest.ccdai.IMsgCenterService -->
+      <class name="DataProviderTest.DataProviderTestCase">
+        <test-method status="PASS" signature="creatDataList1(java.lang.String, java.lang.String)[pri:0, instance:DataProviderTest.DataProviderTestCase@6767c1fc]" name="creatDataList1" duration-ms="0" started-at="2017-03-24T14:13:57Z" data-provider="creatDataList" finished-at="2017-03-24T14:13:57Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[dataprovider1-1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[dataprovider1-2]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- creatDataList1 -->
+        <test-method status="PASS" signature="creatDataList1(java.lang.String, java.lang.String)[pri:0, instance:DataProviderTest.DataProviderTestCase@6767c1fc]" name="creatDataList1" duration-ms="1" started-at="2017-03-24T14:13:57Z" data-provider="creatDataList" finished-at="2017-03-24T14:13:57Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[dataprovider2-1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[dataprovider2-2]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- creatDataList1 -->
+        <test-method status="FAIL" signature="testDataDP1(java.lang.String)[pri:0, instance:DataProviderTest.DataProviderTestCase@6767c1fc]" name="testDataDP1" duration-ms="0" started-at="2017-03-24T14:13:57Z" data-provider="creatDataList" finished-at="2017-03-24T14:13:57Z">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+The data provider is trying to pass 2 parameters but the method DataProviderTest.DataProviderTestCase#testDataDP1 takes 1]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+The data provider is trying to pass 2 parameters but the method DataProviderTest.DataProviderTestCase#testDataDP1 takes 1
+	at org.testng.internal.Invoker.injectParameters(Invoker.java:1225)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1118)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.run(TestNG.java:1048)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:122)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:92)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:101)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:164)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:110)
+	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:172)
+	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:104)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:70)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDataDP1 -->
+      </class> <!-- DataProviderTest.DataProviderTestCase -->
+    </test> <!-- test -->
+  </suite> <!-- Suite -->
+</testng-results>
